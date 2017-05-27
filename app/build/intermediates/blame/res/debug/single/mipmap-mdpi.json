@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/mipmap-mdpi/logo.png",
+        "source": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/src/main/res/mipmap-mdpi/logo.png"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]

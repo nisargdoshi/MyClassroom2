@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/menu/virtual_classroom.xml",
+        "source": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/src/main/res/menu/virtual_classroom.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/menu/home.xml",
+        "source": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/src/main/res/menu/home.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/menu/activity_virtual_classroom_drawer.xml",
+        "source": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/src/main/res/menu/activity_virtual_classroom_drawer.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/menu/activity_home_drawer.xml",
+        "source": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/src/main/res/menu/activity_home_drawer.xml"
+    }
+]

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:text="There is no detail about this classroom can you please provide it as a tutor? Thanks in advance!!"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="67dp" />
+
+    <TextView
+        android:id="@+id/classroomname_tv"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="TextView"
+        android:layout_above="@+id/about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:textAlignment="center"
+        android:textSize="15pt"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

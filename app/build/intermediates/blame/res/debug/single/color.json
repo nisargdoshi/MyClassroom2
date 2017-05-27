@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/nisarg/.android/build-cache/962e97a75a4221a84eb79b08ce4330b67e51e7d2/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/nisarg/.android/build-cache/962e97a75a4221a84eb79b08ce4330b67e51e7d2/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/design_error.xml",
+        "source": "/home/nisarg/.android/build-cache/a0df90d60b84d677cc074f9006f97e4b19e50e98/output/res/color/design_error.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/nisarg/AndroidStudioProjects/MyClassroom2/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/nisarg/.android/build-cache/dd2130a2665d832caa89cef418b12c8f7d3cdcd2/output/res/color/abc_hint_foreground_material_light.xml"
+    }
+]
