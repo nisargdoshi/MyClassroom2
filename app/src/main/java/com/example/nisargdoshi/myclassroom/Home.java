@@ -1,6 +1,7 @@
 package com.example.nisargdoshi.myclassroom;
 
 import android.content.BroadcastReceiver;
+import java.util.Random;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -31,7 +32,10 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 import com.github.clans.fab.FloatingActionMenu;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -44,6 +48,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import android.widget.Toast;
 
 
+
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,ConnectivityReceiver.ConnectivityReceiverListener{
     public ListView lv;
@@ -51,6 +56,11 @@ public class Home extends AppCompatActivity
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthlistner;
     private GoogleApiClient mGoogleApiClient;
+    private Firebase mref;
+    Integer nos=0;
+    String nostudent;
+    String abc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +91,7 @@ public class Home extends AppCompatActivity
         fab.setColorPressedResId(R.color.colorPrimary);
         fa1.setColorPressedResId(R.color.colorPrimary);
 
+        mref=new Firebase("https://virtual-class-476be.firebaseio.com/Classrooms");
         fa1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -108,23 +119,57 @@ public class Home extends AppCompatActivity
                         .setCancelable(false)
                         .setTitle("Join classroom")
 
-                        .setPositiveButton("Create",
+                        .setPositiveButton("Join",
                                 new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog,int id) {
                                         // get user input and set it to result
                                         // edit text
-                                        if(userInput.getText().toString().length()<6)
-                                        {
-                                            Toast.makeText(getBaseContext(),"Invalid Code retry again",Toast.LENGTH_LONG).show();
-                                            dialog.dismiss();
-                                        }
-                                        else
-                                        {
+                                      //  if(userInput.getText().toString().length()<6)
+                                        //{
+                                          //  Toast.makeText(getBaseContext(),"Invalid Code retry again",Toast.LENGTH_LONG).show();
+                                            //dialog.dismiss();
+                                        //}
+                                        //else
+                                       // {
+                                       final Firebase c=mref.child(userInput.getText().toString());
+                                        c.child("Total students").addListenerForSingleValueEvent(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                                nostudent =dataSnapshot.getValue(String.class);
+                                                Firebase studetns=c.child("Students");
+                                                Firebase s=studetns.child("S"+nostudent);
+                                                s.child("Name").setValue("");
+                                                s.child("ID").setValue(Integer.toString(nos));
+                                                nos=Integer.parseInt(nostudent);
+                                                nos++;
+                                                c.child("Total students").setValue(nos);
+                                                Toast.makeText(getBaseContext(),nostudent,Toast.LENGTH_SHORT).show();
+
+                                            }
+
+                                            @Override
+                                            public void onCancelled(FirebaseError firebaseError) {
+
+                                            }
+                                        });
+
+
+
+                                 //       nos=Integer.parseInt(abc);
+                                   //     //Toast.makeText(getBaseContext(),a,Toast.LENGTH_SHORT).show();
+                                     //   nos++;
+                                       //
+                                         //Firebase s=studetns.child("S"+nostudent);
+                                         //s.child("Name").setValue("");
+                                         //s.child("ID").setValue(Integer.toString(nos));
+                                        //nos=nos+1;
+                                        //c.child("Total students").setValue(Integer.toString(nos));
+
                                             Intent i=new Intent(Home.this,virtual_classroom.class);
                                             startActivity(i);
                                         }
 
-                                    }
+//                                    }
                                 })
                         .setNegativeButton("Cancel",
                                 new DialogInterface.OnClickListener() {

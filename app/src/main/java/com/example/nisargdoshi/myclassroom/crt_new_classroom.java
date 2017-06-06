@@ -12,15 +12,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+
+import java.util.Random;
 public class crt_new_classroom extends AppCompatActivity {
         Button btn_new_class;
     final Context context = this;
+    private Firebase mref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crt_new_classroom);
         btn_new_class=(Button)findViewById(R.id.crt_new_class_btn);
-
+        mref=new Firebase("https://virtual-class-476be.firebaseio.com/Classrooms");
 
 
         btn_new_class.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +67,22 @@ public class crt_new_classroom extends AppCompatActivity {
                                        }
                                         else if(classname.getText().toString().length()>0 && classsection.getText().toString().length()>0&&classsubject.toString().toString().length()>0)
                                        {
+
+                                           Random rand = new Random();
+                                           int value = rand.nextInt(999999);
+
+                                           Firebase c=mref.child(Integer.toString(value));
+                                           c.child("Name").setValue(classname.getText().toString());
+                                           c.child("Subjet").setValue(classsubject.getText().toString());
+                                           c.child("section").setValue(classsection.getText().toString());
+                                           c.child("Code").setValue(Integer.toString(value));
+                                           c.child("Total students").setValue("0");
+                                           Firebase Tutor_child=c.child("TutorsDetail");
+                                           Tutor_child.child("Name").setValue("");
+                                           Tutor_child.child("ID").setValue("");
+
+
+
                                            Toast.makeText(getBaseContext(),classname.getText().toString()+classsection.getText().toString()+classsubject.getText().toString(),Toast.LENGTH_LONG).show();
                                             Intent i=new Intent(getBaseContext(),virtual_classroom.class);
                                            i.putExtra("classname",classname.getText().toString());
